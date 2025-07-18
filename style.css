@@ -1,68 +1,62 @@
 @charset "UTF-8";
 body {
-	background: rgb(240,232,198);
 	margin: 0;
 	padding: 0;
+	font-family: "游ゴシック Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 	line-height: 1.6;
+    font-size: 16px;
 }
-#outer {
-	background-color: #fff;
-	margin: 0 auto;
-	width: 900px;
+#header-container {
+  margin: 0 auto;
+  width: 694px;
 }
 header {
-	padding: 20px 20px 10px 30px;
-	height: 100px;
-	background: linear-gradient(to bottom, #fcfaf0, #fff);
+	background-color: #214555;
 }
-#content {
-	float: left;
-	width: 620px;
+#head-inner {
+    padding: 25px 0;
 }
-.inner {
-	margin: 0 10px;
-	padding: 10px 10px 20px 20px;
-}
-aside {
-	color: #676767;
-	font-size: 13px;
-	font-weight: normal;
-	width: 280px;
-	float: left;
-	padding: 17px 0 0 0;
-}
-.right-title {
-	font-size: 15px;
-	margin: 0 26px 0 0;
-	padding: 6px 10px 6px 20px;
+h1 {
+	font-size: 26px;
 	font-weight: bold;
-	background-color: #C4F0EF;
-	color: #666;
-	border-top: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-left: 1px solid #ccc;
+	padding: 10px 0 0 0;
+	margin: 0;
+	color: #f3e6d2;
 }
-.link {
-	margin: 0 26px 15px 0;
-	padding: 16px 10px 10px 14px;
-	border: 1px solid #c7c7c7;
-}
-.link a {
-	font-weight: normal;
-	font-size: 14px;
-	color: #003366;
+h1 a {
+	font-weight: bold;
+	color: #f3e6d2;
 	text-decoration: none;
 }
-.link a:hover {
-	text-decoration: underline;
+h1 a:hover {
+	color: #e8f3f9;
+	text-decoration: none;
+}
+.description {
+	line-height: 1.2;
+	color: #f3f2eb;
+	margin: 0.5em 0 1em 0;
+}
+h2 {
+	font-size: 22px;
+	margin: 0;
+	padding: 4px 0;
+	border-bottom: 1px solid #999;
+}
+#content-wrapper {margin: 0 auto;
+    width: 694px;}
+main {
+	color: #333;
+}
+#inner {
+	padding: 20px 0 0 0;
 }
 ul {
 	margin: 0 0 0 1em;
 	padding: 0;
 }
-.link li {
-	list-style: none;
-	margin-bottom: 8px;
+li {
+	list-style: disc;
 }
 p {
 	margin: 1em 0;
@@ -80,79 +74,95 @@ hr {
 }
 a {
 	font-weight: normal;
-	color: #003366;
 }
-h1 {
-	font-size: 28px;
-	margin: 0;
-	padding: 10px 0 0 0;
+aside {
+
 }
-h1 a {
+#middle-inner {
+	padding: 20px 0 20px 0;
+}
+.side-title {
+	padding: 7px 16px 7px 16px;
+	background-color: #f1f1f1;
+	color: #333;
 	font-weight: bold;
-	color: #000;
-	text-decoration: none;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
-h1 a:hover {
+.side {
+	margin: 0 0 10px 0;
+	padding: 2px 8px 8px 7px;
+	background-color: #fcfcfc;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.side ul {
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+.side li {
+	list-style: none;
+	margin-bottom: 0.5em;
+}
+.side li a {
+	text-decoration: none;
+	color: #214555;
+}
+.side li a:hover {
 	text-decoration: underline;
 }
-h2 {
-	font-size: 18px;
-	margin: 10px 0;
-	padding: 10px;
-	background-color: #E7F5FD;
-	border: 1px solid #C7DBE5;
-}
-h2 a {
-	font-weight: bold;
-	text-decoration: none;
-	color: #265699;
-}
-h3 {
-	font-size: 16px;
-	color: #000000;
-}
-h3 a {
-	text-decoration: none;
-	color: #265699;
-}
 footer {
-	color: #666;
-	font-size: 13px;
+	font-size: 15px;
 	height: 100px;
 	clear: both;
 	text-align: center;
-}
-.pagetop {
-	padding-right: 35px;
-	text-align: right;
 }
 blockquote {
 	border: 1px solid #ccc;
 	padding: 5px;
 	margin: 10px;
 }
-@media screen and (max-width: 768px) {
-#outer {
+@media screen and (max-width: 767px) {
+#header-container {
+    margin: 0;
 	width: 100%;
 }
-#content, aside {
-	float: none;
-	width: 100%;
-	padding: 0;
+header {
+
 }
-.inner {
-	margin: 0;
-	padding: 10px;
+#head-inner {
+    padding: 25px 10px;
+	background-color: #214555;
 }
-.right-title, .link {
-	margin: 0;
+.description {
 }
-.right-title {
-	border-top: none;
-	border-right: none;
-	border-left: none;
+#content-wrapper {
+margin: 0;
+	width: 100%;}
+main {
+width: 100%;
+	color: #333;
 }
-.link {
-	border: none;
+#inner {
+	padding: 20px 10px 0 10px;
+}
+aside {
+width: 100%;
+}
+#middle-inner {
+	padding: 10px 10px 20px 10px;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
 }
 }
